@@ -1,3 +1,3 @@
 package com.example.practicaandroidavanzadokeepcoding.data.remote.request
 
-data class GetHeroesRequestBody()
+data class GetHeroesRequestBody(val name: String = "")
