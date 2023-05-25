@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 class SuperHeroAdapter:  RecyclerView.Adapter<SuperHeroAdapter.SuperHeroViewHolder>() {
 
 
-val superheros = listOf(
+val superheroes = mutableListOf(
     "hero 1",
     "hero 2",
     "hero 3",
@@ -30,11 +30,12 @@ val superheros = listOf(
     }
 
     override fun getItemCount(): Int {
-        return superheros.size
+
+        return superheroes.size
     }
 
     override fun onBindViewHolder(holder: SuperHeroViewHolder, position: Int) {
-      holder.bind(superheros[position])
+      holder.bind(superheroes[position])
     }
 
 
