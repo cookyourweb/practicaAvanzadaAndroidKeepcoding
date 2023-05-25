@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.practicaandroidavanzadokeepcoding.data.Repository
 import com.example.practicaandroidavanzadokeepcoding.data.remote.GetHeroesResponse
-import dagger.hilt.android.scopes.ViewModelScoped
+
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
