@@ -1,0 +1,123 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="vero.practicaandroidavanzado2"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:4:5-66
+11-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:5:5-79
+12-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:5:22-76
+13
+14    <permission
+14-->[androidx.core:core:1.9.0] /Users/vero/.gradle/caches/transforms-3/a85f0051af43c4b72382714c6e17b4d9/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+15        android:name="vero.practicaandroidavanzado2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.9.0] /Users/vero/.gradle/caches/transforms-3/a85f0051af43c4b72382714c6e17b4d9/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.9.0] /Users/vero/.gradle/caches/transforms-3/a85f0051af43c4b72382714c6e17b4d9/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="vero.practicaandroidavanzado2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.9.0] /Users/vero/.gradle/caches/transforms-3/a85f0051af43c4b72382714c6e17b4d9/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.9.0] /Users/vero/.gradle/caches/transforms-3/a85f0051af43c4b72382714c6e17b4d9/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:6:5-28:19
+21        android:name="vero.practicaandroidavanzado2.AppClass"
+21-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:14:9-33
+22        android:allowBackup="true"
+22-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:7:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.9.0] /Users/vero/.gradle/caches/transforms-3/a85f0051af43c4b72382714c6e17b4d9/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+24        android:dataExtractionRules="@xml/data_extraction_rules"
+24-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:8:9-65
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:fullBackupContent="@xml/backup_rules"
+27-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:9:9-54
+28        android:icon="@mipmap/ic_launcher"
+28-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:10:9-43
+29        android:label="@string/app_name"
+29-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:11:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:12:9-54
+31        android:supportsRtl="true"
+31-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:13:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.PracticaAndroidAvanzado2" >
+33-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:15:9-62
+34        <activity
+34-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:17:9-27:20
+35            android:name="vero.practicaandroidavanzado2.ui.MainActivity"
+35-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:18:13-44
+36            android:exported="true"
+36-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:19:13-36
+37            android:label="@string/app_name"
+37-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:20:13-45
+38            android:theme="@style/Theme.PracticaAndroidAvanzado2" >
+38-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:21:13-66
+39            <intent-filter>
+39-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:22:13-26:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:23:17-69
+40-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:23:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:25:17-77
+42-->/Users/vero/Desktop/practicaAndroidAvanzadoSubido/practicaAndroidAvanzadoKeepcoding/app/src/main/AndroidManifest.xml:25:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <service
+46-->[androidx.room:room-runtime:2.5.1] /Users/vero/.gradle/caches/transforms-3/3c69b97a616e88664c3523c89a5070f6/transformed/room-runtime-2.5.1/AndroidManifest.xml:24:9-28:63
+47            android:name="androidx.room.MultiInstanceInvalidationService"
+47-->[androidx.room:room-runtime:2.5.1] /Users/vero/.gradle/caches/transforms-3/3c69b97a616e88664c3523c89a5070f6/transformed/room-runtime-2.5.1/AndroidManifest.xml:25:13-74
+48            android:directBootAware="true"
+48-->[androidx.room:room-runtime:2.5.1] /Users/vero/.gradle/caches/transforms-3/3c69b97a616e88664c3523c89a5070f6/transformed/room-runtime-2.5.1/AndroidManifest.xml:26:13-43
+49            android:exported="false" />
+49-->[androidx.room:room-runtime:2.5.1] /Users/vero/.gradle/caches/transforms-3/3c69b97a616e88664c3523c89a5070f6/transformed/room-runtime-2.5.1/AndroidManifest.xml:27:13-37
+50
+51        <uses-library
+51-->[androidx.window:window:1.0.0] /Users/vero/.gradle/caches/transforms-3/ddf74d9755c2432a373b17346efdbeb6/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+52            android:name="androidx.window.extensions"
+52-->[androidx.window:window:1.0.0] /Users/vero/.gradle/caches/transforms-3/ddf74d9755c2432a373b17346efdbeb6/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+53            android:required="false" />
+53-->[androidx.window:window:1.0.0] /Users/vero/.gradle/caches/transforms-3/ddf74d9755c2432a373b17346efdbeb6/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+54        <uses-library
+54-->[androidx.window:window:1.0.0] /Users/vero/.gradle/caches/transforms-3/ddf74d9755c2432a373b17346efdbeb6/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+55            android:name="androidx.window.sidecar"
+55-->[androidx.window:window:1.0.0] /Users/vero/.gradle/caches/transforms-3/ddf74d9755c2432a373b17346efdbeb6/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+56            android:required="false" />
+56-->[androidx.window:window:1.0.0] /Users/vero/.gradle/caches/transforms-3/ddf74d9755c2432a373b17346efdbeb6/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+57
+58        <provider
+58-->[androidx.emoji2:emoji2:1.2.0] /Users/vero/.gradle/caches/transforms-3/597ee7388dabd7df72ed08433a718e36/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+59            android:name="androidx.startup.InitializationProvider"
+59-->[androidx.emoji2:emoji2:1.2.0] /Users/vero/.gradle/caches/transforms-3/597ee7388dabd7df72ed08433a718e36/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+60            android:authorities="vero.practicaandroidavanzado2.androidx-startup"
+60-->[androidx.emoji2:emoji2:1.2.0] /Users/vero/.gradle/caches/transforms-3/597ee7388dabd7df72ed08433a718e36/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+61            android:exported="false" >
+61-->[androidx.emoji2:emoji2:1.2.0] /Users/vero/.gradle/caches/transforms-3/597ee7388dabd7df72ed08433a718e36/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+62            <meta-data
+62-->[androidx.emoji2:emoji2:1.2.0] /Users/vero/.gradle/caches/transforms-3/597ee7388dabd7df72ed08433a718e36/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+63-->[androidx.emoji2:emoji2:1.2.0] /Users/vero/.gradle/caches/transforms-3/597ee7388dabd7df72ed08433a718e36/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+64                android:value="androidx.startup" />
+64-->[androidx.emoji2:emoji2:1.2.0] /Users/vero/.gradle/caches/transforms-3/597ee7388dabd7df72ed08433a718e36/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+65            <meta-data
+65-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/vero/.gradle/caches/transforms-3/c79ebf7d2156ad6797f95b36c794ef20/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+66-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/vero/.gradle/caches/transforms-3/c79ebf7d2156ad6797f95b36c794ef20/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+67                android:value="androidx.startup" />
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/vero/.gradle/caches/transforms-3/c79ebf7d2156ad6797f95b36c794ef20/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+68        </provider>
+69    </application>
+70
+71</manifest>

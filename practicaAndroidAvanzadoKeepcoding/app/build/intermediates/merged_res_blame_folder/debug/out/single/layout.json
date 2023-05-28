@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "vero.practicaandroidavanzado2.app-mergeDebugResources-47:/layout/content_main.xml",
+        "source": "vero.practicaandroidavanzado2.app-main-50:/layout/content_main.xml"
+    },
+    {
+        "merged": "vero.practicaandroidavanzado2.app-mergeDebugResources-47:/layout/fragment_first.xml",
+        "source": "vero.practicaandroidavanzado2.app-main-50:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "vero.practicaandroidavanzado2.app-mergeDebugResources-47:/layout/fragment_second.xml",
+        "source": "vero.practicaandroidavanzado2.app-main-50:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "vero.practicaandroidavanzado2.app-mergeDebugResources-47:/layout/fragment_third.xml",
+        "source": "vero.practicaandroidavanzado2.app-main-50:/layout/fragment_third.xml"
+    },
+    {
+        "merged": "vero.practicaandroidavanzado2.app-mergeDebugResources-47:/layout/activity_main.xml",
+        "source": "vero.practicaandroidavanzado2.app-main-50:/layout/activity_main.xml"
+    },
+    {
+        "merged": "vero.practicaandroidavanzado2.app-mergeDebugResources-47:/layout/item_superhero.xml",
+        "source": "vero.practicaandroidavanzado2.app-main-50:/layout/item_superhero.xml"
+    }
+]
