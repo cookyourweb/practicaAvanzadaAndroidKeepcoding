@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/ThirdFragment">
+    app:startDestination="@id/FirstFragment">
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="vero.practicaandroidavanzado2.ui.FirstFragment"
-        android:label="@string/superhero_list_fragment_label"
+        android:name="vero.androidavanzado3.FirstFragment"
+        android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
         <action
@@ -17,29 +17,12 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="vero.practicaandroidavanzado2.ui.SecondFragment"
-        android:label="@string/detaill_fragment_label"
+        android:name="vero.androidavanzado3.SecondFragment"
+        android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
-        <action
-            android:id="@+id/action_SecondFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/ThirdFragment"
-        android:name="vero.practicaandroidavanzado2.ui.ThirdFragment"
-        android:label="@string/third_fragment_label"
-        tools:layout="@layout/fragment_third">
-
-        <action
-            android:id="@+id/action_Third_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-        <action
-            android:id="@+id/action_Third_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
     </fragment>
 </navigation>
