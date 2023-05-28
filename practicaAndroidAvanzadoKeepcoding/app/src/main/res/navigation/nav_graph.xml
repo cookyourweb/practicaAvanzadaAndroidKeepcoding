@@ -13,10 +13,10 @@
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/DetailFragment" />
+            app:destination="@id/SecondFragment" />
     </fragment>
     <fragment
-        android:id="@+id/DetailFragment"
+        android:id="@+id/SecondFragment"
         android:name="vero.practicaandroidavanzado2.ui.SecondFragment"
         android:label="@string/detaill_fragment_label"
         tools:layout="@layout/fragment_second">
@@ -40,6 +40,6 @@
             app:destination="@id/FirstFragment" />
         <action
             android:id="@+id/action_Third_to_SecondFragment"
-            app:destination="@id/DetailFragment" />
+            app:destination="@id/SecondFragment" />
     </fragment>
 </navigation>

@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
+
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
@@ -47,9 +48,13 @@ class FirstFragment : Fragment() {
 
         //aqui hacemos la navegacion de un fragment a otro
         val adapter = SuperheroAdapter() {
-            findNavController().navigate(
-                FirstFragmentDirections.actionFirstFragmentToSecondFragment(it))
+            findNavController().
+                navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment())
+                        Log.d("DEL PRIMERO  AL SEGUNDO", it.toString())
         }
+
+
+
         binding.superheroList.adapter = adapter
 
 

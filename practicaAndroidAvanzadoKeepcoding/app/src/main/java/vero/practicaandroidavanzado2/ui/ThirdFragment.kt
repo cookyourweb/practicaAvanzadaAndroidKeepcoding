@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import vero.practicaandroidavanzado2.R
 import vero.practicaandroidavanzado2.databinding.FragmentSecondBinding
 import vero.practicaandroidavanzado2.databinding.FragmentThirdBinding
