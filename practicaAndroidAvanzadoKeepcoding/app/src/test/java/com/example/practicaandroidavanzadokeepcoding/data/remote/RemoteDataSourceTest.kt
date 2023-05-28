@@ -20,42 +20,39 @@ class RemoteDataSourceTest : BaseNetworkMockTest(){
 
 
         //Given : dado un estado
-        val  remoteDataSource = RemoteDataSource2(api)
 
+            val remoteDataSource = RemoteDataSource2(api)
 
-        //When : ejecuto algo
-       val actual  = remoteDataSource.getHeroes()
+        //When : ejecuto algo ()
 
-
+        val actual = remoteDataSource.getHeroes()
 
         //then
 
-        assert(actual[0].name ==  "Broly")
+        assert(actual[0].name == "Broly")
 
     }
 
     @Test
-    fun `WHEN requesting  getHeroes()  EXPECT succesfull response AND 3 heroes starting with B`()  = runTest{
+    fun `WHEN requesting getHeros EXPECT successful response AND 3 heros starting by B`() = runTest {
+        // Given
+        val remoteDataSource = RemoteDataSource2(api)
 
-        //Given
-        val remoteDataSource  = RemoteDataSource2(api)
-
-        //Whenn
+        // When
         val actual = remoteDataSource.getHeroes()
-        //then
+
+        // Then
         assert(actual.size == 3)
     }
-
     @Test
-    fun `WHEN requesting  getHeroes()  EXPECT requestBody absurdo`() = runTest{
+    fun myTest3() = runTest {
+        // Given
+        val getHerosRequestBody = GetHeroesRequestBody("Juan")
 
-        //Given
-        val getHeroesRequestBody = GetHeroesRequestBody("Juan")
+        // When
 
-        //Whenn
-
-        //then
-        assert(getHeroesRequestBody.name =="Juan")
+        // Then
+        assert(getHerosRequestBody.name == "Juan")
     }
 
 

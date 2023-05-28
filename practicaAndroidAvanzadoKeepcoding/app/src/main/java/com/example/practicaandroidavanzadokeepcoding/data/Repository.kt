@@ -5,7 +5,7 @@ import com.example.practicaandroidavanzadokeepcoding.data.remote.GetHeroesRespon
 
 
 class Repository {
-    private val remoteDataSource = RemoteDataSource3()
+    private val remoteDataSource = RemoteDataSource()
     suspend fun getHeroes(): List<GetHeroesResponse>{
 
 

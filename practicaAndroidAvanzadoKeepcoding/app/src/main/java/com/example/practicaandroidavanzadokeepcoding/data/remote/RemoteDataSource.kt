@@ -22,7 +22,7 @@ class RemoteDataSource {
                 level = HttpLoggingInterceptor.Level.BODY
             }).build()
 
-    private val  retrofit = Retrofit.Builder()
+    private val retrofit = Retrofit.Builder()
         .baseUrl("https://dragonball.keepcoding.education/")
         .client(okHttpClient)
         .addConverterFactory(MoshiConverterFactory.create(moshi))
@@ -30,8 +30,34 @@ class RemoteDataSource {
 
     private val api: DragonBallApi = retrofit.create(DragonBallApi::class.java)
 
-    suspend fun getHeroes(): List<GetHeroesResponse>{
-        return  api.getHeroes(GetHeroesRequestBody())
+    suspend fun getHeroes(): List<GetHeroesResponse> {
+        return api.getHeroes(GetHeroesRequestBody())
     }
 
+    class RemoteDataSource {
+
+        private val moshi = Moshi.Builder()
+            .addLast(KotlinJsonAdapterFactory())
+            .build()
+
+        private val okHttpClient =
+            OkHttpClient.Builder()
+                .addInterceptor(HttpLoggingInterceptor(HttpLoggingInterceptor.Logger.DEFAULT).apply {
+
+                    level = HttpLoggingInterceptor.Level.BODY
+                }).build()
+
+        private val retrofit = Retrofit.Builder()
+            .baseUrl("https://dragonball.keepcoding.education/")
+            .client(okHttpClient)
+            .addConverterFactory(MoshiConverterFactory.create(moshi))
+            .build()
+
+        private val api: DragonBallApi = retrofit.create(DragonBallApi::class.java)
+
+        suspend fun getHeroes(): List<GetHeroesResponse> {
+            return api.getHeroes(GetHeroesRequestBody())
+        }
+
+    }
 }

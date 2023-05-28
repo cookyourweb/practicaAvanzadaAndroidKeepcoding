@@ -1,6 +1,7 @@
 package com.example.practicaandroidavanzadokeepcoding
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -36,6 +37,7 @@ class FirstFragment : Fragment() {
 
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            Log.d("DEL PRIMER FRAGMENT AL SEGUNDO", it.toString())
         }
         }
 

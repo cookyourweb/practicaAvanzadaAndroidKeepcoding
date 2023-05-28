@@ -7,10 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
-import com.example.practicaandroidavanzadokeepcoding.R
 import androidx.navigation.fragment.findNavController
 import com.example.practicaandroidavanzadokeepcoding.databinding.FragmentSecondBinding
-import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
@@ -41,23 +39,33 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val adapter = SuperHeroAdapter()
-
-
-
-        binding.superheroList2.adapter = SuperHeroAdapter()
+        binding.superherolist2.adapter = SuperHeroAdapter()
         binding.fab.setOnClickListener {
             viewModel.getHeroes()
-        }
-        viewModel.heroes.observe(viewLifecycleOwner) {
+            Log.d("DENTRODESETONCLIC", it.toString())
 
-            Log.d("SUPERHEROES", it.toString())
-           /* val superheroNames = heroes.map { hero -> (hero.name) }
+        //En la parte de stateflow seria .collect en lugar de .observe con livedata
+
+
+
+            viewModel.heroes.observe(viewLifecycleOwner) { heroes ->
+
+            Log.d("SUPERHEROES", heroes.toString())
+                val superHeroName =heroes.map { hero ->
+                    hero.name
+                }
+                adapter.superheroes.clear()
+                adapter.superheroes.addAll(superHeroName)
+
+
+
+           /* val superheroNames = heroes.map { hero -> (hero.name) }*/
             Log.d("Adapter1", adapter.superheroes.size.toString())
             adapter.superheroes.clear()
             Log.d("Adapter2", adapter.superheroes.size.toString())
-            adapter.superheroes.addAll(superheroNames)
+            adapter.superheroes.addAll(superHeroName)
             Log.d("Adapter3", adapter.superheroes.size.toString())
-            adapter.notifyDataSetChanged()//hay muchos tipos ,este es el*/
+            adapter.notifyDataSetChanged()//hay muchos tipos ,este es el
         }
         lifecycleScope.launchWhenResumed {
             var counter = 0
@@ -71,20 +79,19 @@ class SecondFragment : Fragment() {
                         binding.textViewCounter.text = counter.toString()
                     }
 
-                }
+                }}
 
 
             }
         } //FIN LIFECYCLE
 
-        /*  binding.buttonSecond.setOnClickListener {
-          findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
-      }
-      binding.buttonThird.setOnClickListener {
+         binding.buttonSecond.setOnClickListener {
           findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
+             Log.d("DEL SEGUNDOO FRAGMENT AL TERCERO", it.toString())
       }
-            }*/
-    }
+            }
+
+
 
 
     override fun onDestroyView() {
