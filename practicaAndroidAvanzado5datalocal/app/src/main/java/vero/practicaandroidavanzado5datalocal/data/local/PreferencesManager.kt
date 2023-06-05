@@ -1,6 +1,7 @@
 package vero.practicaandroidavanzado5datalocal.data.local
 
 import android.content.SharedPreferences
+import android.util.Log
 import javax.inject.Inject
 
 class PreferencesManager @Inject constructor(private val sharedPreferences: SharedPreferences) {
@@ -10,6 +11,7 @@ class PreferencesManager @Inject constructor(private val sharedPreferences: Shar
     }
 
     fun getToken(): String {
+        Log.d("Token", "getTOKEN token = TOKEN_KEY")
         return sharedPreferences.getString(TOKEN_KEY, "").orEmpty()
     }
 
