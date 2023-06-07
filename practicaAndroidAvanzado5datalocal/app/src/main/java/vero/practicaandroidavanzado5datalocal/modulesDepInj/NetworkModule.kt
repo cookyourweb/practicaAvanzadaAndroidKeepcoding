@@ -19,7 +19,7 @@ import vero.practicaandroidavanzado5datalocal.data.local.PreferencesManager
 object NetworkModule {
 
     private const val TOKEN =
-        "eyJhbGciOiJIUzI1NiIsImtpZCI6InByaXZhdGUiLCJ0eXAiOiJKV1QifQ.eyJpZGVudGlmeSI6IjdDNzQ1NjRCLTQ5NUEtNDhCRC04QzIyLTM5OEUwOUREODY0MyIsImV4cGlyYXRpb24iOjY0MDkyMjExMjAwLCJlbWFpbCI6Imp1YW5qZS5jaWxsYTFAZ21haWwuY29tIn0.epMHxtAkVu_fT5FvQwKrm_fRqzT9UOG2gpiTTipQajw"
+        "eeyJraWQiOiJwcml2YXRlIiwiYWxnIjoiSFMyNTYiLCJ0eXAiOiJKV1QifQ.eyJpZGVudGlmeSI6IjdENjY1Njk0LTQxMzItNEIzOC1CRkVCLTRCRTU1QUY4MzRDMyIsImV4cGlyYXRpb24iOjY0MDkyMjExMjAwLCJlbWFpbCI6InZlcnNlcnBlckBob3RtYWlsLmNvbSJ9.jkHI5lwsd6ggV-iwFev3kbxB-qUiI5LZx8bRq54eqSc"
 
 
     @Provides
