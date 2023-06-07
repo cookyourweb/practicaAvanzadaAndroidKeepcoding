@@ -15,6 +15,9 @@ import vero.practicaandroidavanzado5datalocal.domain.Bootcamp
 import javax.inject.Inject
 
 
+//la dependencia api:DragonBallApi la  paso directamente en el constuctor de tal forma que asi puedo
+//elgir que api  voy a pasar, o la de produ  o la de test
+
 class RemoteDataSourceImpl @Inject constructor(private val api: DragonBallAPI) : RemoteDataSource {
 
     override suspend fun getBootcamps(): List<Bootcamp> {

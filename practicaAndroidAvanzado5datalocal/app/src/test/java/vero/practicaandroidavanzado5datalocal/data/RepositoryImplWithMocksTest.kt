@@ -23,7 +23,7 @@ import vero.practicaandroidavanzado5datalocal.utils.generateHerosRemote
 
 @OptIn(ExperimentalCoroutinesApi::class)
 class RepositoryImplWithMocksTest {
-
+//para los moks hay que ir a la docu de mockwebserver y ver su documentacion
     //UUT o SUT
     private lateinit var repositoryImpl: RepositoryImpl
     private lateinit var localDataSource: LocalDataSource

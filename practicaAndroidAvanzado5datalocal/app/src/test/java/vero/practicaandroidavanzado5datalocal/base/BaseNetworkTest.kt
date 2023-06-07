@@ -13,7 +13,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import vero.practicaAndroidAvanzadov5.data.remote.DragonBallAPI
 import vero.practicaandroidavanzado5datalocal.utils.DragonBallApiDispatcher
 import java.util.concurrent.TimeUnit
-
+//cuando va a extender de otras clases, se le añade el open
 open class BaseNetworkTest {
     private val moshi = Moshi.Builder()
         .add(KotlinJsonAdapterFactory())
@@ -23,10 +23,13 @@ open class BaseNetworkTest {
     private lateinit var mockWebServer: MockWebServer
     private lateinit var okHttpClient: OkHttpClient
     private lateinit var loggingInterceptor: HttpLoggingInterceptor
+//Los metodo before:setup y after:teardown son metodos auxiliares que lo siempre se ejecutan antes y despues de nuestro
+    // util para cuando hay muchos tests
+
 
     @Before
     fun setup(){
-        mockWebServer = MockWebServer()
+        mockWebServer = MockWebServer() //un servidor para cada test.Generamoos el equivalente a prood
         mockWebServer.dispatcher = DragonBallApiDispatcher()
         mockWebServer.start()
         loggingInterceptor = HttpLoggingInterceptor().apply {
@@ -37,7 +40,7 @@ open class BaseNetworkTest {
         api = Retrofit.Builder()
             .baseUrl(mockWebServer.url("/"))
             .client(okHttpClient)
-            .addConverterFactory(MoshiConverterFactory.create(moshi))
+            .addConverterFactory(MoshiConverterFactory.create(moshi))   //converter
             .build()
             .create(DragonBallAPI::class.java)
     }

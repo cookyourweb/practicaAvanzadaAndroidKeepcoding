@@ -36,4 +36,5 @@ interface DragonBallAPI {
 
     @POST("api/heros/locations")
     suspend fun getHeroLocations(@Body getLocationRequestBody: GetLocationRequestBody): List<SuperHeroLocationRemote>
+    fun getHeros()
 }

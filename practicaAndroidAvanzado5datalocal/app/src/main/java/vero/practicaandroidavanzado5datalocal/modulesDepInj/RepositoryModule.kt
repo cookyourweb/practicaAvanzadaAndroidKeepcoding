@@ -1,4 +1,4 @@
-package vero.practicaandroidavanzado5datalocal.modules
+package vero.practicaandroidavanzado5datalocal.modulesDepInj
 
 
 import dagger.Binds
