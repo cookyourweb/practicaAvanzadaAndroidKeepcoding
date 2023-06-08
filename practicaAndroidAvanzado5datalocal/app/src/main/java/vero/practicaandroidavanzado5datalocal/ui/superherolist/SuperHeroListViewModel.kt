@@ -19,6 +19,7 @@ class SuperHeroListViewModel @Inject constructor(
 
     private val _heros = MutableLiveData<List<SuperHero>>()
     val heros: LiveData<List<SuperHero>>
+
         get() = _heros
 
     private val _error = MutableLiveData<String>()
@@ -33,20 +34,13 @@ class SuperHeroListViewModel @Inject constructor(
         private val TAG = "ListViewModel: "
     }
 
-    fun getBootcamps() {
-        viewModelScope.launch {
-            val bootcamps = withContext(Dispatchers.IO) {
-                repository.getBootcamps()
-            }
-            Log.d(TAG, bootcamps.toString())
-        }
-    }
 
     fun getSuperheros() {
         viewModelScope.launch {
             val superheros = withContext(Dispatchers.IO) {
                 repository.getHerosWithCache()
             }
+            Log.d(TAG, superheros.toString())
             _heros.value = superheros
         }
     }
@@ -56,6 +50,7 @@ class SuperHeroListViewModel @Inject constructor(
             val superheroListState = withContext(Dispatchers.IO) {
                 repository.getHerosWithException()
             }
+            Log.d(TAG, superheroListState.toString())
 
             _state.value = superheroListState
         }

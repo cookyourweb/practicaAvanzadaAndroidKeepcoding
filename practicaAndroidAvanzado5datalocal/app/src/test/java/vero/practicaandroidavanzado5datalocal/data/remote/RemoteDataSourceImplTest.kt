@@ -27,6 +27,19 @@ class RemoteDataSourceImplTest : BaseNetworkTest(){
 
         // THEN
         Truth.assertThat(actual).hasSize(15)
+
+    }
+
+    @Test
+    fun `WHEN getHeros EXPECT sucesss and returns the name fisrt position`() = runTest {
+        // GIVEN
+       val remoteDataSourceImpl = RemoteDataSourceImpl(api)
+
+        // WHEN
+        val actual = remoteDataSourceImpl.getHeros()
+
+        // THEN
+
         Truth.assertThat(actual[0].name).isEqualTo("Maestro Roshi")
     }
 

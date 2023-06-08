@@ -11,7 +11,6 @@ import vero.practicaandroidavanzado5datalocal.data.remote.request.GetLocationReq
 import vero.practicaandroidavanzado5datalocal.data.remote.response.SuperHeroDetailRemote
 import vero.practicaandroidavanzado5datalocal.data.remote.response.SuperHeroRemote
 
-import vero.practicaandroidavanzado5datalocal.domain.Bootcamp
 import javax.inject.Inject
 
 
@@ -20,10 +19,7 @@ import javax.inject.Inject
 
 class RemoteDataSourceImpl @Inject constructor(private val api: DragonBallAPI) : RemoteDataSource {
 
-    override suspend fun getBootcamps(): List<Bootcamp> {
-        Log.d( "bootcamps" , "petición bootcamp")
-        return api.getBootcamps()
-    }
+
 
     override suspend fun getHeros(): List<SuperHeroRemote> {
         return api.getHeros(GetHeroesRequestBody())

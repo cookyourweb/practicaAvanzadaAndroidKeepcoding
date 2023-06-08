@@ -11,11 +11,7 @@ internal class DragonBallApiDispatcher : Dispatcher() {
 
     override fun dispatch(request: RecordedRequest): MockResponse {
         return when (request.path) {
-            "/api/data/bootcamps" -> {
-                MockResponse()
-                    .setResponseCode(HttpURLConnection.HTTP_OK)
-                    .setBody(getJson("json/bootcamps.json"))
-            }
+
             "/api/heros/all" -> {
                 MockResponse()
                     .setResponseCode(HttpURLConnection.HTTP_OK)

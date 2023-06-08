@@ -12,12 +12,10 @@ import vero.practicaandroidavanzado5datalocal.data.remote.response.SuperHeroDeta
 import vero.practicaandroidavanzado5datalocal.data.remote.response.SuperHeroLocationRemote
 
 import vero.practicaandroidavanzado5datalocal.data.remote.response.SuperHeroRemote
-import vero.practicaandroidavanzado5datalocal.domain.Bootcamp
+
 //las interfaces por def son abstracciones pq no tienen implementacion
 interface DragonBallAPI {
 
-    @GET("api/data/bootcamps")
-    suspend fun getBootcamps(): List<Bootcamp>
 
     @POST("api/heros/all")
     suspend fun getHerosWithException(): List<SuperHeroRemote>

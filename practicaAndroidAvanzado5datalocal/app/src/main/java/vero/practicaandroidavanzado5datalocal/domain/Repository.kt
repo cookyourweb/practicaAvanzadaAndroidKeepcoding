@@ -5,7 +5,7 @@ import vero.practicaandroidavanzado5datalocal.ui.superherolist.SuperHeroListStat
 
 
 interface Repository {
-    suspend fun getBootcamps(): List<Bootcamp>
+
     suspend fun getHeros(): List<SuperHero>
     suspend fun getHerosWithCache(): List<SuperHero>
     suspend fun getHerosWithException(): SuperHeroListState

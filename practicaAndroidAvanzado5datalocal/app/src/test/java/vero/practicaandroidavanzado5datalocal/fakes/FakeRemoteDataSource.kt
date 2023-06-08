@@ -7,13 +7,8 @@ import retrofit2.Response
 import vero.practicaandroidavanzado5datalocal.data.remote.RemoteDataSource
 import vero.practicaandroidavanzado5datalocal.data.remote.response.SuperHeroDetailRemote
 import vero.practicaandroidavanzado5datalocal.data.remote.response.SuperHeroRemote
-import vero.practicaandroidavanzado5datalocal.domain.Bootcamp
 
  class FakeRemoteDataSource : RemoteDataSource {
-
-    override suspend fun getBootcamps(): List<Bootcamp> {
-        TODO("Not yet implemented")
-    }
 
     override suspend fun getHeros(): List<SuperHeroRemote> {
         TODO("Not yet implemented")
@@ -32,7 +27,7 @@ import vero.practicaandroidavanzado5datalocal.domain.Bootcamp
                     "photo",
                     "description",
                     false
-                )
+
             )
             "NETWORK_ERROR" -> Result.failure(HttpException(Response.success(204, {})))
             "NULL" -> Result.failure(NullPointerException("Null pointer error"))

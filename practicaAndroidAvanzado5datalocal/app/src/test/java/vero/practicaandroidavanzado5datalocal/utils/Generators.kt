@@ -2,13 +2,10 @@ package vero.practicaandroidavanzado5datalocal.utils
 
 import vero.practicaandroidavanzado5datalocal.data.local.model.SuperHeroLocal
 import vero.practicaandroidavanzado5datalocal.data.remote.response.SuperHeroRemote
-import vero.practicaandroidavanzado5datalocal.domain.Bootcamp
+
 import vero.practicaandroidavanzado5datalocal.domain.SuperHero
 
 
-fun generateBootcamps(): List<Bootcamp> {
-    return (0 until 10).map { Bootcamp("ID: $it", "Name $it") }
-}
 
 fun generateHerosRemote(): List<SuperHeroRemote> {
     return (0 until 10).map {

@@ -12,7 +12,7 @@ import vero.practicaandroidavanzado5datalocal.data.mappers.PresentationToLocalMa
 import vero.practicaandroidavanzado5datalocal.data.mappers.RemoteToLocalMapper
 import vero.practicaandroidavanzado5datalocal.data.mappers.RemoteToPresentationMapper
 import vero.practicaandroidavanzado5datalocal.data.remote.RemoteDataSource
-import vero.practicaandroidavanzado5datalocal.domain.Bootcamp
+
 import vero.practicaandroidavanzado5datalocal.domain.Repository
 import vero.practicaandroidavanzado5datalocal.domain.SuperHero
 import vero.practicaandroidavanzado5datalocal.domain.SuperHeroDetail
@@ -28,9 +28,7 @@ class RepositoryImpl @Inject constructor(
     private val presentationToLocalMapper: PresentationToLocalMapper,
 ) : Repository {
 
-    override suspend fun getBootcamps(): List<Bootcamp> {
-        return remoteDataSource.getBootcamps()
-    }
+
 
     override suspend fun getHeros(): List<SuperHero> {
         return remoteToPresentationMapper.map(remoteDataSource.getHeros())
