@@ -26,6 +26,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 import dagger.hilt.android.AndroidEntryPoint
 import vero.practicaandroidavanzado5datalocal.R
 import vero.practicaandroidavanzado5datalocal.databinding.FragmentSuperHeroDetailBinding
+import kotlin.math.log
 
 
 @AndroidEntryPoint
@@ -37,8 +38,7 @@ class SuperHeroDetailFragment : Fragment(), OnMapReadyCallback {
     // onDestroyView.
     private val binding get() = _binding!!
 
-    //private val args: DetailFragmentArgs by navArgs()
-   // private val viewModel: DetailViewModel by viewModels()
+
 
     private val args: SuperHeroDetailFragmentArgs by navArgs()
     private val viewModel: SuperHeroDetailViewModel by viewModels()
@@ -89,6 +89,7 @@ class SuperHeroDetailFragment : Fragment(), OnMapReadyCallback {
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as? SupportMapFragment
         mapFragment?.getMapAsync(this)
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

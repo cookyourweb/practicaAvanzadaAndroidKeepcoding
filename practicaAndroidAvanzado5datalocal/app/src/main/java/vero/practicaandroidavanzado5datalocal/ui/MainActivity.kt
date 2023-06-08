@@ -43,5 +43,7 @@ class MainActivity : AppCompatActivity(), MyInterface {
 }
 
 interface MyInterface {
-    fun hola()
+    fun hola(
+
+    )
 }

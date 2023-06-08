@@ -27,7 +27,7 @@ import vero.practicaandroidavanzado5datalocal.data.remote.response.SuperHeroRemo
                     "photo",
                     "description",
                     false
-
+                )
             )
             "NETWORK_ERROR" -> Result.failure(HttpException(Response.success(204, {})))
             "NULL" -> Result.failure(NullPointerException("Null pointer error"))
