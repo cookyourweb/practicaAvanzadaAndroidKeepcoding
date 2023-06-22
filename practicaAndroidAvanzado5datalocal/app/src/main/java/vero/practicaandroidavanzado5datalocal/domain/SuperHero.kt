@@ -13,3 +13,4 @@ data class SuperHero(
 //fun SuperHero.toLocal(): SuperHeroLocal {
 //    return SuperHeroLocal(this.id, this.name, this.photo, "", false)
 //}
+g
